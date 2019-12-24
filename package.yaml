@@ -1,0 +1,57 @@
+name:                Expr2Graph
+version:             0.1.0.0
+github:              "LeoAlex0/Expr2Graph"
+license:             BSD3
+author:              "zLeoAlex"
+maintainer:          "z.alex.leo@outlook.com"
+copyright:           "zLeoAlex"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/LeoAlex0/Expr2Graph#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- graphviz
+- text
+- fgl
+
+library:
+  source-dirs: src
+  build-tools:
+  - alex
+  - happy
+  dependencies:
+  - array
+  - containers
+
+executables:
+  Expr2Graph-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - Expr2Graph
+
+tests:
+  Expr2Graph-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - Expr2Graph
