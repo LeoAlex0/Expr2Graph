@@ -1,3 +1,6 @@
 .stack-work/
 Expr2Graph.cabal
 *~
+
+/Expr2Graph.iml
+/.idea/

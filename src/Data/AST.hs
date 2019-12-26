@@ -17,7 +17,7 @@ data AST
   | Sub AST AST
   | Mul AST AST
   | Div AST AST
-  deriving (Eq,Ord,Show)
+  deriving (Eq, Ord, Show)
 
 {-
 instance Eq AST where
@@ -50,7 +50,6 @@ instance Ord AST where
   Div _ _ <= _ = False
 
 -}
-
 subASTs p@(Add a b) = S.insert p ((S.union `on` subASTs) a b)
 subASTs p@(Sub a b) = S.insert p ((S.union `on` subASTs) a b)
 subASTs p@(Mul a b) = S.insert p ((S.union `on` subASTs) a b)
