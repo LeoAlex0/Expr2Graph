@@ -92,4 +92,4 @@ BTW this result is as below
 * More operator such as `^`
 * Some new feature like `let...in...`
 * Named function
-* Recurtion support
+* Recursion support
