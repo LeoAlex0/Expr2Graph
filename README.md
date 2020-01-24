@@ -1,6 +1,6 @@
 # Expr2Graph
 
-An Convertor from Expression to Graph(dot)
+A Converter from Expression to Graph(dot)
 
 ![test](doc/test.svg)
 
@@ -26,7 +26,7 @@ An Convertor from Expression to Graph(dot)
 
 ## Usage
 
-An expression in each line, whose syntax as below.
+An expression in each line, whose syntax is as below.
 
 ### Syntax
 
@@ -61,7 +61,7 @@ For example these functions below are OK
 
 ### Output
 
-NOTICE: This program **DOES NOT** generate any image such as `svg` or `jpeg` but the content of an `dot` file, which can convert to an image file using [Graphviz](https://graphviz.org/).
+NOTICE: This program **DOES NOT** generate any image format such as `svg` or `jpeg` but the content of an `dot` file, which can convert to an image file using [Graphviz](https://graphviz.org/).
 
 So you can use command like this to generate an image
 
@@ -79,11 +79,11 @@ BTW this result is as below
 | ------ | ---------------------------------------------- |
 | Circle | Operator such as `+`,`-`,`*`,`/`               |
 | Box    | An Immediately number(only `Integers` for now) |
-| Box3D  | The Index(begining with `0`) of an Argument    |
+| Box3D  | The Index(beginning with `0`) of an Argument   |
 
 ## Known Bugs
 
-* When combining sub-trees,there're still some duplicate arrors in graph (`[a b] a*a + a*b + a*b + b*b` as below)
+* When combining sub-trees, there are still some duplicate errors in graph (`[a b] a*a + a*b + a*b + b*b` as below)
 
   ![bug1](doc/bug1.svg)
 
