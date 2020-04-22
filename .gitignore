@@ -1,6 +1,6 @@
 .stack-work/
 Expr2Graph.cabal
 *~
-
+*.lock
 /Expr2Graph.iml
 /.idea/
